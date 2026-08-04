@@ -30,6 +30,14 @@ class Solution {
 
     static int digits(int countnumbers){
         int count = 0;
+
+        if(countnumbers < 0){
+            countnumbers = countnumbers * -1;
+        }
+
+        if(countnumbers == 0){
+            return 1;
+        }
         while(countnumbers>0){
             countnumbers = countnumbers/10;
             count++;
